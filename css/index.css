@@ -66,133 +66,262 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+body {
+	background-color:black;
+}
+
+
 .container {
 	width: 80%;
-    margin: 0 auto;
-	
-}
-@media screen and (max-width: 800px){
-.container {
-    width: 80%;
-    background-color: white;}
+	margin: 0 auto;
+	background-color: white;
 }
 
-@media screen and (max-width: 800px){
-.header {
-        width: 100%;
-        flex-direction: row-reverse;
-        background-color: white;
-        opacity: .9;
-    }
+
+/* Begin Header/Navigation menu code */
+header{
+	text-align: center;
+	width: 80%;
+	position: fixed;
+	margin: 0 auto;
+	height: 100px; 
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: white;
 }
-@media screen and (max-width: 800px){
+
 nav {
-    margin: 0px;
-    padding-top: 15px;
+	padding-top: 30px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
 }
+
+#nav-menu, #nav-logo{
+	vertical-align: middle;
 }
-.header {
-    text-align: center;
-    width: 80%;
-    position: fixed;
-    margin: 0 auto;
-    height: 100px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-nav {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-}
-/*header nav  {
-	display: inline-block;
-	margin-top: 30px;
-}
-header nav a {
-	margin: 0px 40px;
-	text-transform: uppercase;
+
+
+nav a {      
+	color: gray;
 	text-decoration: none;
 }
-/* this is entire class */
-.demand {
+/* End Header/Navigation menu code */
+/* Begin Section1 code */
+
+#section1{
+	width:100%;
+	padding: 10px 0px;
+	text-align: center;
+	margin: 100px 0px 10px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: stretch;
+}
+
+
+#button1{
+	padding: 10px 40px;
+	margin: 0px;
+	background-color: blue;    
+	border: 1px black solid;
+	color:white;
+}
+#button1:hover {
+	background-color: white;
+	color: blue;
+}
+#mega-huge{
+	padding: 0px;
+	margin: 0px;
+	font-size: 75px
+}
+/* End Section1 code */
+
+/* Begin Features and about sections code */
+
+.wrapper{
 	width: 100%;
-    padding: 10px 0px;
-    text-align: center;
-    margin: 100px 0px 10px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: stretch;
-}
-#mega-huge {
-    padding: 0px;
-    margin: 0px;
-    font-size: 75px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
 }
 
-.button {
-    padding: 10px 40px;
-    margin: 0px;
-    background-color: blue;
-    border: 1px black solid;
-    color: white;
+.section-block1 {
+	text-align: left;
+	max-width: 46%;
+	margin: 0px 5px 25px 10px;
 }
 
-
-
-
-.top-content  {
-	width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-	
-}
-.top-content div {
-	display: inline-block;
+.section-block2 {
+	text-align: left;
+	max-width: 29%;
+	margin: 25px 0px 25px 10px;
 }
 
-.features  {
-	width: 45%;
-	margin-bottom: 30px;
-	
-}
-.about {
-	width: 50%;
-	margin-bottom: 30px;
+/* End Features and about sections code */
+
+/* Begin the Middle graphic code */
+.wrapper img{
+width: 100%;
+padding: 10px;
 }
 
+/* End the Middle graphic code */
 
-.line {
-	margin: 50px ;
-	
-}
-.bottom-content {
-	position: relative;
-}
-.bottom-content div {
-	display: inline-block;
-	width: 32%;
-	margin-bottom: 20px;
-	box-sizing: border-box;
+/* Begin the footer code */
 
+footer {
+margin: 35px 0px 0px 0px;
 }
 
-.contact {
-    text-align: center;
-}
 #copy {
-    text-align: center;
+text-align: center;
 }
+footer a {
+text-decoration: none;
+color: black;
+}
+footer a:hover, footer a:active {
+	color: black;
+	background-color: white;
+}
+/* End the footer code */
+
+/* Begin Media Querries */
+@media screen and (max-width: 800px) {
+	.container {
+		  width: 80%;
+		  background-color: white;
+	  }
+	  #header{
+		  width: 100%;
+		  flex-direction: row-reverse;
+		  background-color: white;
+		  opacity: .9;
+	  }
+	  nav {
+		  margin: 0px;
+		  padding-top: 15px;
+	  }
+	  #a, #b, #c, #d, #e, #f{
+		  order: 1;
+		  color:  rgb(1, 64, 136);
+		  font-weight: bolder;
+	  }
+	  #g{
+		  order: 0;
+		  width: 100%;
+		  padding-bottom: 20px;
+	  }
+	  #sub{
+		  margin-bottom: 25px;
+	  }
+	  #sub-logo{
+		  display: none;
+	  }
+	  #mega-huge{
+		  padding-bottom: 20px;
+	  }
+	  #button1{
+		  color:  rgb(1, 64, 136);
+		  background-color: white;
+	  }
+	  #button1:hover{
+		  background-color: rgb(1, 64, 136);
+		  color: white;
+	  }
+	  footer {
+		  text-align: left;
+	  }
+  }
+  
+  @media screen and (max-width: 500px) {
+	  .container {
+		  width: 98%;
+		  background-color: white;
+	  }
+	  #header{
+		  width: 100%;
+		  background-color: white;
+		  opacity: .9;
+		  position: relative;
+		  height: 280px;
+	  }
+	  nav {
+		  margin: 0px;
+		  padding-top: 15px;
+		  flex-direction: column;
+		  justify-content: space-around;
+		  align-content: space-around;
+		  align-items: stretch;
+	  }
+	  a{
+		  margin: 0px;
+		  padding: 0px;
+	  }
+	  #a, #b, #c, #d, #e, #f{
+		  order: 1;
+		  color:  rgb(1, 64, 136);
+		  font-weight: bolder;
+		  border-bottom: 1px solid rgb(1, 64, 136);
+		  width: 100%;
+		  margin-top: 15px;
+		  vertical-align: center;
+		  padding-bottom: 15px;
+	  }
+	  #g{
+		  border-bottom: 1px solid rgb(1, 64, 136);
+		  width: 100%;
+		  order: 0;
+		  width: 100%;
+		  padding-bottom: 20px;
+	  }
+	  #sub{
+		  margin-bottom: 25px;
+	  }
+	  #sub-logo{
+		  display: none;
+	  }
+	  #mega-huge{
+		  padding-bottom: 20px;
+	  }
+	  #button1{
+		  color:  rgb(1, 64, 136);
+		  background-color: white;
+	  }
+	  #button1:hover{
+		  background-color: rgb(1, 64, 136);
+		  color: white;
+	  }
+	  .wrapper{
+		  flex-direction: column;
+		  justify-content: center;
+		  align-content: center;
+	  }
+	  .section-block1 {
+			  text-align: left;
+			  max-width: 100%;
+			  margin: 0px 5px 25px 10px;
+		  }
+		  
+		.section-block2 {
+			  text-align: left;
+			  max-width: 100%;
+			  margin: 0px 5px 25px 10px;
+		  }
+	  footer {
+		  text-align: left;
+	  }
+  }
